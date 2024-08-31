@@ -64,7 +64,7 @@ return(
     <h1 className="text-center font-bold text-lg sm:text-3xl p-10 sm:p-0">MY<span className="text-yellow-500"> PERSONAL</span> PROJECTS</h1>
 
    
-<div className="p-0 sm:p-6 w-full sm:h-full flex-none space-y-20 sm:space-y-0 sm:flex gap-20 ">
+<div className="p-0 sm:p-6 w-11/12 sm:w-full sm:h-full flex-none space-y-20 sm:space-y-0 sm:flex gap-20 ">
 <Carousel
       autoPlay
       infiniteLoop
@@ -75,7 +75,7 @@ return(
     >
 {projects.map((project)=> {
 
-return ( <div key={project.id} className="space-y-6  border-2 border-solid border-gray-100 p-6 sm:p-10  rounded-lg " >
+return ( <div key={project.id} className="  space-y-6  border-2 border-solid border-gray-100 p-6 sm:p-10  rounded-lg " >
 
     <img src={project.imageUrl} alt="thumbnail" className="w-full h-72 object-cover"/>
     <div className="text-xl font-bold text-gray-300">{project.title}</div>

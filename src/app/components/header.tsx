@@ -13,7 +13,7 @@ const Header =()=>{
     };
 
 return (
-    <div className='fixed'>
+    <div className='fixed z-50'>
 <div className='block w-screen  sm:hidden'>
 
 <div className="relative bg-slate-950 p-2">
