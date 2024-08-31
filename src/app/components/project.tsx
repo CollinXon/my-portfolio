@@ -42,7 +42,7 @@ const MyProject = () => {
         MY<span className="text-yellow-500"> PERSONAL</span> PROJECTS
       </h1>
 
-      <div className="p-0 sm:p-6 w-full lg:h-full flex-none space-y-20 xl:space-y-0 xl:flex gap-20 ">
+      <div className="p-0 sm:p-6 w-full h-auto flex-none space-y-20 xl:space-y-0 xl:flex gap-20 " >
         <Carousel
           autoPlay
           infiniteLoop
@@ -50,23 +50,24 @@ const MyProject = () => {
           showArrows={false}
           showThumbs={false}
           showStatus={false}
+          className="carousel"
         >
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="   space-y-6  border-2 border-solid border-gray-100 p-0 xl:p-10  rounded-lg "
+                className="   space-y-6  p-6 xl:p-10  rounded-lg "   
               >
                 <img
                   src={project.imageUrl}
                   alt="thumbnail"
-                  className="w-full h-72 object-cover p-3 sm:p-4 xl:p-0"
+                  className="w-full h-72 object-cover"
                 />
                 <div className="text-xl font-bold text-gray-300">
                   {project.title}
                 </div>
                 <div className="">{project.description}</div>
-                <div className="flex justify-end items-center gap-10 p-4 xl:p-0 ">
+                <div className="flex justify-end items-center gap-10 ">
                   <Link href={project.liveUrl} target="_blank" title="Livelink">
                     <Link1Icon className="w-6 h-6" />{" "}
                   </Link>
