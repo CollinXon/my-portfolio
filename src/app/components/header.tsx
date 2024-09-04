@@ -51,7 +51,7 @@ const Header = () => {
                 </li>
                 <li className="border-b-2 border-white">
                   <a
-                    href="/Collins Ennah - Frontend Resume .pdf"
+                    href="/Collins Ennah - Frontend Resume.pdf" target="_blank"
                     download
                     onClick={toggleMenu}
                   >
