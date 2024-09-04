@@ -94,7 +94,7 @@ const ContactMe = () => {
             type="email"
             placeholder="Enter Email"
             {...register("email")}
-            className="p-3 bg-gray-500 w-[300px] lg:w-[400px] text-white focus:outline-none rounded-sm"
+            className="p-3 bg-gray-500 w-9/12 lg:w-[400px] text-white focus:outline-none rounded-sm"
           />
           {errors.email && (
             <p className="text-red-600">{errors.email.message}</p>
@@ -103,7 +103,7 @@ const ContactMe = () => {
           <textarea
             placeholder="Message"
             {...register("message")}
-            className="p-3 bg-gray-500 h-48 w-full sm:w-[585px] text-white focus:outline-none rounded-sm"
+            className="p-3 bg-gray-500 h-48 w-full sm:w-[585px] text-white focus:outline-none rounded-sm" 
           />
           {errors.message && (
             <p className="text-red-600">{errors.message.message}</p>

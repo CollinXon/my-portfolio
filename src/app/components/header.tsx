@@ -89,7 +89,7 @@ const Header = () => {
             <Link href="#projects" className=" hover:text-gray-500">
               PROJECTS
             </Link>
-            <Link href="/Collins Ennah - Frontend Resume .pdf" download>
+            <Link href="/Collins Ennah - Frontend Resume.pdf" target="_blank" download>
               RESUME
             </Link>
 
