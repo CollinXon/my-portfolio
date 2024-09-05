@@ -25,6 +25,7 @@ const ContactMe = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
@@ -42,6 +43,7 @@ const ContactMe = () => {
       if (response.ok) {
         // Handle success (e.g., show a success message)
         console.log("Email sent successfully");
+        reset(); 
       } else {
         // Handle error (e.g., show an error message)
         console.error("Failed to send email");
@@ -95,6 +97,7 @@ const ContactMe = () => {
             placeholder="Enter Email"
             {...register("email")}
             className="p-3 bg-gray-500 w-9/12 lg:w-[400px] text-white focus:outline-none rounded-sm"
+            aria-invalid={errors.email ? "true" : "false"}
           />
           {errors.email && (
             <p className="text-red-600">{errors.email.message}</p>

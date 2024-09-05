@@ -51,7 +51,7 @@ const Header = () => {
                 </li>
                 <li className="border-b-2 border-white">
                   <a
-                    href="/Collins Ennah - Frontend Resume.pdf" target="_blank"
+                    href="/Collins Ennah - Frontend Resume .pdf" target="_blank"
                     download
                     onClick={toggleMenu}
                   >
@@ -89,7 +89,7 @@ const Header = () => {
             <Link href="#projects" className=" hover:text-gray-500">
               PROJECTS
             </Link>
-            <Link href="/Collins Ennah - Frontend Resume.pdf" target="_blank" download>
+            <Link href="/Collins Ennah - Frontend Resume .pdf" target="_blank" title="download resume" download>
               RESUME
             </Link>
 
