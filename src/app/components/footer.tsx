@@ -21,7 +21,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex justify-center text-yellow-500 mt-10 xl:mt-4 space-x-4 ">
+      <div className="flex justify-center text-yellow-500 mt-10 xl:mt-4 space-x-4 cursor-pointer">
         <Link href="https://github.com/CollinXon" target="_blank">
           <GitHubLogoIcon className="w-8 h-8" />
         </Link>

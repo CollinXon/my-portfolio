@@ -30,7 +30,7 @@ const AboutMe = () => {
           </div>
           Let&#39;s connect and build something great!
         </div>
-        <button className="bg-yellow-500 py-2 px-4">
+        <button className="bg-yellow-500 py-2 px-4 cursor-pointer">
           <a href="mailto:ennahcollins@gmail.com">Contact Me </a>
         </button>
       </div>

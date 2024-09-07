@@ -33,7 +33,7 @@ const Header = () => {
             }`}
           >
             <nav className="p-4">
-              <ul className="space-y-8 ">
+              <ul className="space-y-8 cursor-pointer">
                 <li className="border-b-2 border-white">
                   <a href="#" onClick={toggleMenu}>
                     HOME
